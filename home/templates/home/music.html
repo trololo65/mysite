@@ -1,0 +1,30 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %} Музыка. {% endblock %}
+{% block head %}
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+{% endblock %}
+{% block content %}
+<div class="pad-header"></div>
+<div class="music">
+	<div class="container">
+		{% if music %}
+			{% for el in music %}
+				<div class="post-border-no mrg-t-b25">
+					<div class="d-f d-f-center">
+						<div class="left-post music-icon"><i class="fas fa-headphones-alt"></i></div>
+						<div class="right-post-music">
+							<div class="sub-title post-title">{{el.title}} <span class="text">{{ el.music_len }}</span></div>
+							<div class="details_button text but-anim-orange"><a href="{{ el.url }}">Скачать.</a></div>
+							<div class="date">{{el.date}}</div>
+						</div>
+					</div>
+					
+				</div>
+			{% endfor %}
+		{% else %}
+		<div class="title pt25">Песен пока нет. :(</div>
+		{% endif %}
+	</div>
+</div>
+{% endblock %}

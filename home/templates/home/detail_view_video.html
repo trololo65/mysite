@@ -1,0 +1,24 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %} {{ video.title }} {% endblock %}
+{% block content %}
+<div class="pad-header"></div>
+	<div class="container">
+		<div class="post-detail">
+			<div class="d-f">
+				<div class="left-post">
+					<img src="{{video.poster.url}}" alt="'''Постер фильма'''">
+				</div>
+				<div class="right-post">
+					<div class="title">{{ video.title }}</div>
+					<div class="text">Жанр: {{video.zjanr}}</div>
+					<div class="text p-t-b20">Дата выхода: {{ video.date_start }}</div>
+		        	<div class="text">{{ video.full_text }}</div>
+		        	<div class="date">{{ video.date }}</div>
+		        	<div class="text but-anim-org but-pos"><a href="{{video.url}}">Посмотреть.</a></div>
+				</div>
+	        	
+	        </div>
+	    </div>
+    </div>
+{% endblock %}

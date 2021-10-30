@@ -1,0 +1,170 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %} Морские котики {% endblock %}
+{% block content %}
+<div class="pad-header"></div>
+<div class="cats">
+	<div class="cats-header">
+		<div class="container">
+			<div class="title">Морские котики</div>
+			<div class="cats-content">
+				<div class="cats-left">
+					<div class="text">
+						Эта страница, с прекрасными и милыми морскими котиками здесь лишь потому, что моя близкая подруга Дарья попросила сделать её.
+						<br> Всё ради тебя, Дашуль. :) 
+						<br><br>Ну, а что бы контента совсем не было мало, тут я соберу 10 фактов об этих прекрасных животных.
+					</div>
+				</div>
+				<div class="cats-right">
+					<img src="{% static 'images/cat_cute.png' %}" alt="">
+				</div>
+			
+			</div>
+			
+		</div>
+	</div>
+	<div class="cats-facts">
+		<div class="title" id="title-fact">Факты о морских котиках</div>
+		<div class="cats-fact">
+			<div class="container">
+				<div class="cats-fact_content">
+					<div class="cats-fact_left cats-text">
+						<div class="text">
+							Современная популяция морских котиков оценивается примерно в 5 млн особей. Однако, из них около 4,8 млн приходятся на представителей всего четырёх видов, в то время как порядка 200 тысяч остаётся остальным пяти. Некоторые из них находятся в уязвимом положении, хоть вымирание им сейчас и не угрожает.
+						</div>
+					</div>
+					<div class="cats-fact_right">
+						<img src="{% static 'images/cat11.jpg' %}" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cats-fact">
+			<div class="container">
+				<div class="cats-fact_content">
+					<div class="cats-fact_left">
+						<img src="{% static 'images/cat2.jpg' %}" alt="">
+					</div>
+					<div class="cats-fact_right cats-text">
+						<div class="text">
+							Люди столетиями охотились на морских котиков ради их шкур, причём так варварски, что эта охота имела характер целенаправленного истребления. Так, в 1819 году были открыты колонии керлегенских морских котиков на Южных Шетландских островах, и в течение следующих 2 лет было истреблено более 400.000 животных, а спустя ещё 9 лет, в 1830 году, этот вид был объявлен вымершим. К счастью, как оказалось, ему всё-таки удалось уцелеть, и в настоящее время ему ничего не угрожает.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cats-fact">
+			<div class="container">
+				<div class="cats-fact_content">
+					<div class="cats-fact_left cats-text">
+						<div class="text">
+							Питаются морские котики рыбой и моллюсками, за которыми они могут нырять на значительную глубину, до 180-200 метров. Запаса воздуха им хватает на довольно долгое погружение, а острое зрение позволяет им видеть добычу даже в темноте, которая всегда царит на такой глубине.
+						</div>
+					</div>
+					<div class="cats-fact_right">
+						<img src="{% static 'images/cat3.jpg' %}" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cats-fact">
+			<div class="container">
+				<div class="cats-fact_content">
+					<div class="cats-fact_left">
+						<img src="{% static 'images/cat4.jpg' %}" alt="">
+					</div>
+					<div class="cats-fact_right cats-text">
+						<div class="text">
+							Самки морских котиков всегда рожают всего одного детёныша, причём беременность них длится до года, то есть дольше, чем у людей. Они выкармливают дитя молоком, но период молочного вскармливания у них длится всего 3-5 месяцев, причём за это время детёныша кормят всего 10-12 раз, то есть несколько раз в месяц.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cats-fact">
+			<div class="container">
+				<div class="cats-fact_content">
+					<div class="cats-fact_left cats-text">
+						<div class="text">
+							Самцы морских котиков образуют вокруг себя гаремы из самок, что приводит к конкуренции между ними. Нередко встречаются попытки одиноких самцов в прямом смысле слова утащить самку у более удачливых собратьев. В таких случаях чаще всего страдают именно самки. Они заметно меньше самцов и в 3-5 раз легче, поэтому при драках самцов они нередко калечатся или даже погибают. Гаремы наиболее популярных самцов могут состоять из 35-40 самок.
+						</div>
+					</div>
+					<div class="cats-fact_right">
+						<img src="{% static 'images/cat5.jpg' %}" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cats-fact">
+			<div class="container">
+				<div class="cats-fact_content">
+					<div class="cats-fact_left">
+						<img src="{% static 'images/cat6.jpg' %}" alt="">
+					</div>
+					<div class="cats-fact_right cats-text">
+						<div class="text">
+							При случае морские котики, будучи самыми настоящими хищниками, всегда готовы сожрать кого-нибудь, кого способны поймать, например, какую-нибудь морскую птицу. Но они и сами иногда становятся жертвами акул и касаток, которым ничего не могут противопоставить, несмотря на всю свою ловкость в водной стихии.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cats-fact">
+			<div class="container">
+				<div class="cats-fact_content">
+					<div class="cats-fact_left cats-text">
+						<div class="text">
+							Большую часть года морские котики ведут более-менее одиночный образ жизни. Сородичей они при этом не избегают, но и в стаи предпочитают не сбиваться. А вот во время сезона размножения, который может длиться 3-5 месяцев, они собираются вместе, образуя огромные колонии, численность особей в которых может измеряться сотнями тысяч.
+						</div>
+					</div>
+					<div class="cats-fact_right">
+						<img src="{% static 'images/cat7.jpg' %}" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cats-fact">
+			<div class="container">
+				<div class="cats-fact_content">
+					<div class="cats-fact_left">
+						<img src="{% static 'images/cat8.jpg' %}" alt="">
+					</div>
+					<div class="cats-fact_right cats-text">
+						<div class="text">
+							Когда во время брачного сезона образуются массовые лежбища морских котиков, самцы соперничают между собой за лучшие места на берегу. Они достаются самым сильным, а вот те самцы, что послабее, выталкиваются всё дальше и дальше к краю лежбища, что резко уменьшает их шансы на встречу с самкой.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cats-fact">
+			<div class="container">
+				<div class="cats-fact_content">
+					<div class="cats-fact_left cats-text">
+						<div class="text">
+							Отличительная черта морского котика – мягкий пушистый подшерсток. В былые времена эта особенность делала этих животных очень привлекательными для охотников, которые могли продать мех по очень высокой цене. Мехом покрыто все тело, кроме ласт. Эти большие участки без шерсти помогают морским котикам сохранять прохладу в жаркую погоду.
+						</div>
+					</div>
+					<div class="cats-fact_right">
+						<img src="{% static 'images/cat9.jpg' %}" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cats-fact">
+			<div class="container">
+				<div class="cats-fact_content">
+					<div class="cats-fact_left">
+						<img src="{% static 'images/cat10.jpg' %}" alt="">
+					</div>
+					<div class="cats-fact_right cats-text">
+						<div class="text">
+							Морские котики произошли от тех же земных предков, которые дали начало собакам и медведям. Они являются близкими родственниками современных морских львов.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

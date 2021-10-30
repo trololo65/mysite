@@ -1,0 +1,27 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %} Фильмы и сериалы. {% endblock %}
+{% block content %}
+<div class="pad-header"></div>
+<div class="video">
+	<div class="container">
+		{% if video %}
+			{% for el in video %}
+				<div class="post mrg-t-b25 d-f">
+					<div class="left-post">
+						<img src="{{el.poster.url}}" alt="'''Постер фильма'''">
+					</div>
+					<div class="right-post">
+						<div class="sub-title post-title">{{el.title}}</div>
+						<div class="text ">{{el.anons}}</div>
+						<div class="details_button text but-anim"><a href="{% url 'video_detail' el.id %}">Подробнее.</a></div>
+						<div class="date">{{el.date}}</div>
+					</div>
+				</div>
+			{% endfor %}
+		{% else %}
+		<div class="title pt25">Постов пока нет. :(</div>
+		{% endif %}
+	</div>
+</div>
+{% endblock %}

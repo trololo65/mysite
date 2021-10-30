@@ -1,0 +1,207 @@
+{% extends 'home/base.html' %}
+{% load static %}
+
+{% block head %}
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<style> .header{ background-color: rgba(35, 47, 62, 0.3);}</style>
+	<script>
+		document.addEventListener('scroll', function(event) {
+	var rect = $('.clientRect')[0].getBoundingClientRect();
+	
+	var b = $(".header").height();
+	if (rect.top - b / 2 <= 0) {
+		
+		$(".header").css('backgroundColor', 'rgba(35, 47, 62, 1)');
+	} else {
+		
+		$(".header").css('backgroundColor', 'rgba(35, 47, 62, 0.3)');
+	}
+});
+	</script>
+{% endblock %}
+{% block title %} Главная {% endblock %}
+{% block content %} 
+	<div class="landing">
+		<div class="adi_logo">
+			<img src="{% static 'images/logo_adi.png' %}" alt="">
+		</div>
+		<div class="bgc">
+			<div class="scroll">
+				<a href="#scroll"></a>
+			</div>
+		</div>
+	</div>
+	<div class="clientRect" id="scroll"></div>
+	<div class="main">
+		<div class="container">
+			<div class="main-title title">Оглавление..</div>
+			<div class="main-content">
+				<div class="main-text text">
+					Приветушки-ребятушки. <br>
+					    Наверняка вы думаете: "Почему пицца?". Этому нет логического объяснения, могу сказать лишь то, что люблю пиццу.
+					    <br>А теперь немного о сайте... Сразу же отвечу на главный вопрос: "О чём сайт?". Ответ прост – он обо мне.
+					   <br>Идея сделать сайт про себя мне пришла внезапно и вскоре я решил её воплотить. А раз, дорогой читатель, ты сейчас тут, то у меня всё получилось.
+					   <br>Листай дальше и узнавай обо мне больше!
+				</div>
+				<div class="main-end"></div>
+				<div class="main-image">
+					<img src="{% static 'images/pizza_cute.png' %}" alt="">
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="about_me">
+		<div class="about_me-bg">
+			
+			<div class="container about-me_pad">
+				<div class="about_me-bgc">
+					
+				<div class="about_me-title title">Обо мне</div>
+					<div class="about_me-text text">
+						Хей! Меня зовут Ади, я веб-программист из Туркменистана. Неожиданная страна, не так ли?) <br>
+						Но не будем на ней зацикливаться. И так, раз мы уже знакомы, то слушай. я разделю эту часть страницы на небольшие секции, чтобы было удобнее. Надеюсь, ты будешь не против. :)
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about_me-content">
+			<div class="about_me-skills">
+				<div class="about_me-container">
+					<div class="skills-title">Знания</div>
+					<div class="skills-content">
+						<div class="skills-left">
+							<div class="skills-text text">
+								На протяжении какого то времени я учился и продолжаю изучать такие языки/программы/фреймворки как:
+								<ul>
+									<li class="html"><a href="https://ru.wikipedia.org/wiki/HTML" target="_blank">HTML</a></li>
+									<li class="css"><a href="https://ru.wikipedia.org/wiki/CSS" target="_blank">CSS</a></li>
+									<li class="js"><a href="https://ru.wikipedia.org/wiki/JavaScript" target="_blank">JS</a></li>
+									<li class="python"><a href="https://ru.wikipedia.org/wiki/Python" target="_blank">Pyt<span>hon</span></a></li>
+									<li class="django"><a href="https://ru.wikipedia.org/wiki/Django" target="_blank">Django</a></li>
+									<li class="photoshop"><a href="https://ru.wikipedia.org/wiki/Adobe_Photoshop" target="_blank">Photo<span>shop</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="skills-end"></div>
+						<div class="skills-right">
+							<div class="skills-images">
+								<div class="skills-grid">
+									<div class="skills-image "><img src="{% static 'images/html.png' %}" alt=""></div>
+									<div class="skills-image"><img src="{% static 'images/css.png' %}" alt=""></div>
+									<div class="skills-image"><img src="{% static 'images/js.png' %}" alt=""></div>
+									<div class="skills-image"><img src="{% static 'images/python.png' %}" alt=""></div>
+									<div class="skills-image"><img src="{% static 'images/django.png' %}" alt=""></div>
+									<div class="skills-image"><img src="{% static 'images/photoshop.png' %}" alt=""></div>
+								</div>
+							</div>
+						</div>
+						<div class="skills-end"></div>
+					</div>
+				</div>
+			</div>
+			<div class="about_me-sport">
+				<div class="about_me-container">
+					<div class="sport-title">Спорт</div>
+					<div class="sport-content">
+						<div class="sport-left">
+							<div class="sport-images">
+								<div class="sport-image1"><img src="{% static 'images/box.png' %}" alt=""></div>
+								<div class="grid-pustota"></div>
+								<div class="grid-pustota"></div>
+								<div class="sport-image2"><img src="{% static 'images/turnik.png' %}" alt=""></div>
+							</div>
+						</div>
+						<div class="sport-right">
+							<div class="sport-text text">
+								Мои увлечения спортом бывали разными.
+								<br> Я занимался боксом, какое-то время ходил на акробатику, но на протяжении всего этого времени я занимался воркаутом.
+								<br> <a href="">Воркаут</a> - прекрасный уличный спорт, схожий моментами с акробатикой.
+								<br> Воркаутом я занимаюсь по сей день, стараюсь изучають новые элементы и при этом совмещать всё это с учёбой. Пока выходит не плохо.)
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="this_find">
+		<div class="container">
+			<div class="this_find-title title">
+				Здесь вы сможете найти:
+			</div>
+			<div class="this_find-content">
+				<div class="this_find-frame">
+					<div class="frame-image">
+						<i class="fas fa-compact-disc color_orange"></i><span>Музыка</span>
+					</div>
+
+					<div class="frame-text">В разделе <span class="color_orange">музыки</span> вы сможете найти понравившеюся мне музыку и ссылку на её скачивание.</div>
+				</div>
+				<div class="this_find-frame">
+					<div class="frame-image">
+						<i class="fas fa-video color_orange"></i><span>Фильмы</span>
+					</div>
+					<div class="frame-text">В разделе <span class="color_orange">фильмы</span> вы сможете найти просмотренные мною фильмы/сериалы, а также моя критика о них и ссылку на просмотр.</div>
+				</div>
+				<div class="this_find-frame">
+					<div class="frame-image">
+						<i class="fas fa-edit color_orange"></i><span>Истории</span>
+					</div>
+					<div class="frame-text">В разделе <span class="color_orange">истории</span> вы сможете найти истории из моей и не только жизни, различные смешные либо грустные моменты.</div>
+				</div>
+				<div class="this_find-frame">
+					<div class="frame-image">
+						<i class="fas fa-align-center color_orange"></i><span>Разное</span>
+					</div>
+					<div class="frame-text">В разделе <span class="color_orange">разное</span> вы сможете найти различные интересные статьи, видео-уроки и многое другое.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact_me">
+		<div class="container">
+			<div class="title">Связь со мной</div>
+			<div class="contact_me-content">
+				<div class="contact_me-left">
+					<div class="contact_me-text text">
+						Связаться со мной вы можете написав мне в телеграм, либо на почту. Как вам удобнее, решайте сами.)
+						<br>А теперь ссылки.. 
+						<br><br>
+						<div class="telegram">
+						<a href="tg://resolve?domain=trololo_1">Тык</a>
+						</div>
+						<br>
+						<div class="mail">
+							
+						<a href="mailto:adyls3402@gmail.com">Тык</a>
+						</div>
+					</div>
+				</div>
+				<div class="contact_me-end"></div>
+				<div class="contact_me-right">
+					<div class="contact_me-pustota"></div>
+					<div class="contact_me-image">
+						<img src="{% static 'images/telegram.png' %}" alt="">
+					</div>
+					<div class="contact_me-image">
+						<img src="{% static 'images/mail.png' %}" alt="">
+					</div>
+					<div class="contact_me-pustota"></div>
+				</div>
+				<div class="contact_me-end"></div>
+			</div>
+				<p>Просьба не писать мне всякую чушь и сразу уточнить, где вы взяли ссылку на мой аккаунт.</p>
+		</div>
+	</div>
+ {% endblock %}
+{% block script %}
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	-->
+	<script src="{% static 'script.js' %}"></script>
+	
+{% endblock %}

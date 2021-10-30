@@ -1,0 +1,140 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %} Ирис и агенты {% endblock %}
+{% block content %}
+<div class="pad-header"></div>
+<div class="iris-header">
+	<div class="container">
+		<div class="title" id="title-iris">Ирис</div>
+		<div class="iris-header_content">
+			<div class="iris-left text">
+				<b>Ирис</b> - отличный бот для модерирования одной и даже нескольких бесед в сетке.
+				<br>У него достаточно большой функционал который включает в себя базовые команды для модерации, а также развлекательные и рп команды.
+				<br>Бот работает как в широкоизвестной соц. сети <u><a href="">ВК</a></u>, так и в популярном мессенджере <u><a href="">Telegram</a></u>.
+				<br>А пишу я о нём потому, что являюсь частью дружной команды Агентов Поддержки данного бота.
+			</div>
+			<div class="iris-right">
+				<img src="{% static 'images/iris.jpg' %}" alt="">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="iris-agents">
+	<div class="container" id="agents-pad">
+		<div class="title">Агенты и администраторы бота</div>
+		<div class="text">Я расскажу вам по-немногу о каждом уточке-агенте, с которым я работал и продолжаю работать сообща по сей день.</div>
+	</div>
+	<div class="iris-agents_ivan agent">
+		<div class="container">
+			<div class="iris-agent_title">Иван</div>
+			<div class="text">
+				Иван является создателем Ириса, он не агент, но всё же не будь его тут - было бы странно.
+				<br>Про Ивана я могу рассказать немного, ибо я с ним мало общался. Но я уверен, что он хороший человек и к тому же отличный программист.
+			</div>	
+		</div>
+		
+	</div>
+	<div class="iris-agents_leha agent">
+		<div class="container">
+			<div class="iris-agent_title">Алексей(Наташ)</div>
+			<div class="text">
+				Лёша, или как мы любим его называть "Наташ", также как и Иван - программист.
+				<br>Алексей отличный парень, который создал и продолжает адаптировать бота-помощника ириса(@IrisSupportBot). Он помогает во многих технических планах, обновляет статьи ириса и ищет в нём баги.
+			</div>
+		</div>
+		
+	</div>
+	<div class="iris-agents_gosha agent">
+		<div class="container">
+			<div class="iris-agent_title">Георгий</div>
+			<div class="text">
+				Гоша - один из главных админов и "отец" нашего коллектива. Ну и его цитата "я токс".
+				<br>Гоша отвечает за набор агентов, создание конкурсов, помощь пользователям, выдачу наказаний агентам.
+			</div>	
+		</div>
+		
+	</div>
+	<div class="iris-agents_masha agent">
+		<div class="container">
+			<div class="iris-agent_title">Мария</div>
+			<div class="text">
+				Маша - второй главный админ бота, булочка и соответственно "мать" коллектива.
+				<br>Её обязанности схожи с обязанностями Гоши. Могу сказать, что она один из лучших агентов.
+			</div>
+		</div>
+		
+	</div>
+	<div class="iris-agents_adi agent">
+		<div class="container">
+			<div class="iris-agent_title"> Ади (я)</div>
+			<div class="text">
+				Питса всея ириса.
+				<br>Обо мне вы можете прочесть на <u><a href="{% url 'home' %}">главной</a></u> странице. А как агент о себе я говорить не буду.
+			</div>
+		</div>
+		
+	</div>
+	<div class="iris-agents_alena agent">
+		<div class="container">
+			<div class="iris-agent_title">Алёна</div>
+			<div class="text">
+				Алёнка - честно, сложно о ней что то сказать, ибо у неё не мало как хейтеров, так и поклонников.
+				<br>А в плане агента она хороша, успевает следить как за чатом помощи, так и за антиспам дружиной.
+			</div>
+		</div>
+		
+	</div>
+	<div class="iris-agents_vlad agent">
+		<div class="container">
+			<div class="iris-agent_title">Владислав</div>
+			<div class="text">
+				Влад у нас достаточно недавно и говорить о его каких то личных качествах сложно.
+				<br> Но я могу с уверенностью сказать, что он отличный агент.
+			</div>
+		</div>
+		
+	</div>
+	<div class="iris-agents_toma agent">
+		<div class="container">
+			<div class="iris-agent_title">Тамила (бывший агент)</div>
+			<div class="text">
+				Томка - местный кусающийся котик.
+				<br>В своё время была прекрасным агентом, успевающим и общаться в оффтоп чате и отвечать на вопросы в чате помощи. Сожалею о её уходе.
+			</div>
+		</div>
+		
+	</div>
+	<div class="iris-agents_lervix agent">
+		<div class="container">
+			<div class="iris-agent_title">Марк (бывший агент)</div>
+			<div class="text">
+				Лерва - немного странный, но что в этом плохого?
+				<br>Агентом он также был хорошим, множество раз выручал людей с проблемами в боте.
+			</div>
+		</div>
+		
+	</div>
+	<div class="iris-agents_katya agent">
+		<div class="container">
+			<div class="iris-agent_title">Екатерина (бывший агент)</div>
+			<div class="text">
+				Катюша - великолепна тем, что у нас схожие вкусы в фильмах.
+				<br>Неплохой агент, но всё же и минусов у неё хватало.
+				<br>
+			</div>
+		</div>
+		
+	</div>
+	<div class="iris-agents_sofa agent">
+		<div class="container">
+			<div class="iris-agent_title">София (бывший агент)</div>
+			<div class="text">
+				Софа - милашка, которая рисует лучше, чем ты.
+				<br>Прелестный агент, справедливая и честная ко всем. Цитируя слова Марии: "Самый искренний и преданный человек, которого она знала".
+				<br>
+			</div>
+		</div>
+		
+	</div>
+</div>
+{% endblock %}

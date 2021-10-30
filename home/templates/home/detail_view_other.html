@@ -1,0 +1,13 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %} {{ other.title }} {% endblock %}
+{% block content %}
+<div class="pad-header"></div>
+	<div class="container">
+		<div class="post-detail">
+	        <div class="title">{{ other.title }}</div>
+	        <div class="text">{{ other.full_text }}</div>
+	        <div class="date">{{ other.date }}</div>
+	    </div>
+    </div>
+{% endblock %}

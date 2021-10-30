@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style> .header{ background-color: rgba(35, 47, 62, 1);}</style>
+	{% block head %} {% endblock %}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <header class="header">
+        	<div class="containerm">
+        		<div class="header-content">
+        			<div class="header-logo">
+        				<a href="{% url 'home' %}"><img src="{% static 'images/logo.png' %}" alt="" class="logo"></a>
+        			</div>
+        			<div class="header-pustota"></div>
+	        		<div class="header-links">
+	        			<div class="header-home header-link"><a href="{% url 'home' %}">Главная </a></div>
+	        			<div class="header-line"></div>
+	        			<div class="header-post header-link">
+	        				<div>Категории <img src="{% static 'images/arrow.png' %}" alt=""></div>
+	        				<span>
+	        					<h1><a href="{% url 'music' %}">Музыка</a></h1>
+	        					<p> </p>
+	        					<h1><a href="{% url 'video' %}">Фильмы</a></h1>
+	        					<p> </p>
+	        					<h1><a href="{% url 'history' %}">Истории</a></h1>
+	        					<p> </p>
+	        					<h1><a href="{% url 'other' %}">Статьи</a></h1>
+	        				</span>
+	        			</div>
+        			</div>
+        		</div>
+        	</div>
+        </header>
+        <div class="content">
+        	{% block content %} {% endblock %}
+        </div>
+        <footer class="footer">
+        	<div class="footer-bgc">
+	        	<div class="container">
+	        		<div class="footer-content">
+	        			<div class="footer-logo">
+	        				<a href="{% url 'home' %}"><img src="{% static 'images/logo_adi.png' %}" alt=""></a>
+	        			</div>
+	        			<div class="footer-links">
+	        				<div class="footer-title">Категории</div>
+	        				<div class="footer-link"><a href="{% url 'music' %}">Музыка</a></div>
+	        				<div class="footer-link"><a href="{% url 'video' %}">Фильмы</a></div>
+	        				<div class="footer-link"><a href="{% url 'history' %}">Истории</a></div>
+	        				<div class="footer-link"><a href="{% url 'other' %}">Статьи</a></div>
+	        			</div>
+	        			<div class="footer-other_links">
+	        				<div class="footer-title">Прочее</div>
+	        				<div class="footer-other_link"><a href="{% url 'thanks' %}">Благодарность</a></div>
+	        				<div class="footer-other_link"><a href="{% url 'cats' %}">Морские котики</a></div>
+	        				<div class="footer-other_link"><a href="{% url 'modules' %}">Мои модули FTG</a></div>
+	        				<div class="footer-other_link"><a href="{% url 'iris' %}">Ирис</a></div>
+	        			</div>
+	        			<div class=""></div>
+	        		</div>
+
+	        	</div>
+        	</div>
+        	<div class="footer-develop_by">
+        		<div class="container">
+        			Дизайн и разработка :
+        			 <p>Ади.</p>
+        		</div>
+        	</div>
+        </footer>
+    </div>
+    
+	{% block script %} {% endblock %}
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends 'home/base.html' %}
+{% load static %}
+{% block title %} Истории. {% endblock %}
+{% block content %}
+<div class="pad-header"></div>
+<div class="history">
+	<div class="container">
+		{% if history %}
+			{% for el in history %}
+				<div class="post mrg-t-b25">
+
+					<div class="sub-title post-title">{{el.title}}</div>
+					<div class="text post-text">{{el.anons}}</div>
+					<div class="details_button text but-anim"><a href="{% url 'history_detail' el.id %}">Подробнее.</a></div>
+					<div class="date">{{el.date}}</div>
+				</div>
+			{% endfor %}
+		{% else %}
+		<div class="title pt25">Историй пока нет. :(</div>
+		{% endif %}
+	</div>
+</div>
+{% endblock %}
